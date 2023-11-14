@@ -6,7 +6,7 @@ Next, review the 3 images in the provided `viewport-images` folder. These images
 
 Finally, build on the existing code to recreate this grid across two breakpoints by using `min-width` queries:
 
-1. 768px for tablet/medium 
+1. 768px for tablet/medium
 2. 1280px for large/laptop
 
 ## HTML
