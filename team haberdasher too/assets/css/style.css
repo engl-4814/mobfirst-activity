@@ -67,10 +67,46 @@ h2 {font-size: 1.25rem;}
 /* GRID */
 
 /* Grid Area Definitions */
-
+.nav__primary    {grid-area:nav;}
+.first_priority  {grid-area:1pr;}
+.second_priority {grid-area:2pr;}
+aside            {grid-area:aside;}
+footer           {grid-area:foot;}
 
 /* Tablet/Medium-Sized Screens */
-
+@media screen and (min-width: 768px) {
+  main {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "nav 1pr"
+      "nav 2pr"
+      "aside aside"
+      "foot foot";
+  }
+}
 
 /* Desktop/Larger-Sized Screens */
 
+@media screen and (min-width: 1280px) {
+  main {
+   display:grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: 1fr 3fr 2fr 1fr;
+   grid-template-areas: 
+     "nav nav"
+     "1pr aside"
+     "2pr aside"
+     "foot foot";
+  }
+  .nav__primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav__primary > * {
+      flex: 1 1 100px;
+  }
+  }
+}
