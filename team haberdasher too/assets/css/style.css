@@ -105,7 +105,7 @@ footer           {grid-area:foot;}
     flex-direction: row;
     justify-content:space-around;
   }
-  .nav__primary > ul > li{
+  .nav__primary > ul > li {
     border-top: none;
     align-content:center;
   }
