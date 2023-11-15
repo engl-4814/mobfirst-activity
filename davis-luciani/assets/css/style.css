@@ -108,7 +108,7 @@ footer {grid-area: ftr;}
     margin: 4rem;
   }
 }
-.nav__primary {
+.nav__primary ul {
   display: flex;
   
 }
